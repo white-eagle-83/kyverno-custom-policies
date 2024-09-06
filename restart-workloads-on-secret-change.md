@@ -1,4 +1,4 @@
-How this policy works:
+### How this policy works:
 
 This policy ensures that each specified pod is restarted when a secret is updated within the same namespace. Kyverno monitors each secret in every namespace for the annotation restart-workloads: "true". If this annotation is not present in the secret's definition, the secret update will not impact any related resources in any namespace. To activate this policy, create the secret in the Kubernetes cluster as illustrated in the example below.
 
